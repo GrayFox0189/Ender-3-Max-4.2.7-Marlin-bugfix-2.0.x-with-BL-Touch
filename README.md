@@ -7,6 +7,11 @@ Thanks to Teaching Tech, holmes4 (from Creality Forum) and Flawioo (from GitHub)
 
 List of Changes:
 
+platform.ino
+
+16    default_envs = STM32F103RET6_creality
+
+
 Configuration.h
 
 120   #define BAUDRATE 115200 // Change Baudrate from 250000 to 115200.
