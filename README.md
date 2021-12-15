@@ -1,4 +1,4 @@
-# Ender-3-Max-4.2.7-Marlin-bugfix-2.0.x-
+# Ender-3-Max-4.2.7-Marlin-bugfix-2.0.x-with-BL-Touch
 Latest Marlin bugfix-2.0.x with Ender 3 Max with BL Touch
 
 I changed these parameters to have the settings as close to the original as possible.
