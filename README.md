@@ -1,6 +1,10 @@
 # Ender-3-Max-4.2.7-Marlin-bugfix-2.0.x-
 Latest Marlin bugfix-2.0.x with Ender 3 Max with BL Touch
 
+I changed these parameters to have the settings as close to the original as possible.
+
+Thanks to Teaching Tech, holmes4 (from Creality Forum) and Flawioo (from GitHub)
+
 List of Changes:
 
 Configuration.h
@@ -49,3 +53,21 @@ Configuration.h
 
 1901	#define NOZZLE_PARK_POINT { (X_MAX_POS - 10), (Y_MIN_POS + 10), 20 } // From { (X_MIN_POS + 10), (Y_MAX_POS - 10), 20 } this move hotend in front of the bed.
 
+
+Configuration_adv.h
+
+1272  #define PROBE_OFFSET_WIZARD // Add Probe Z Offset Wizard.
+
+1950  #define BABYSTEP_ZPROBE_OFFSET          // Combine M851 Z and Babystepping // Enabled babystep for better accuracy.
+
+1974  //#define LIN_ADVANCE // Disabled linear advance. I couldn't get it to work.
+
+2472  #define FILAMENT_CHANGE_UNLOAD_FEEDRATE     10  // (mm/s) Unload filament feedrate. This can be pretty fast. // I wanted to have the original settings of my Ender 3
+
+2474  #define FILAMENT_CHANGE_UNLOAD_LENGTH      100  // (mm) The length of filament for a complete unload.
+
+2481  #define FILAMENT_CHANGE_FAST_LOAD_FEEDRATE   6  // (mm/s) Load filament feedrate. This can be pretty fast.
+
+2483  #define FILAMENT_CHANGE_FAST_LOAD_LENGTH     0  // (mm) Load length of filament, from extruder gear to nozzle.
+
+2488  #define ADVANCED_PAUSE_PURGE_LENGTH         50  // (mm) Length to extrude after loading.
